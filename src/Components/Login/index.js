@@ -52,7 +52,7 @@ export const Login = (props) => {
       <div className="content">
         <form onSubmit={onSubmit} className="login-form">
           <h1>
-            Login <span>USER</span>
+            Login <span>USER info</span>
           </h1>
           <TextField
             required
