@@ -78,7 +78,6 @@ export default function UserCard({ userINFO }) {
                   <img
                     className={classes.proImg}
                     src={item.image}
-                    alt="image"
                   ></img>
                 </div>
                 <h2 style={{ marginBottom: 10 }}>{item.name}</h2>
