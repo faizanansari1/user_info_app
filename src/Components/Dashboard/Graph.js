@@ -20,7 +20,7 @@ const data = {
 
 export default function Graph() {
   return (
-    <Paper style={{ margin: "0 10px", padding: "20px",}}>
+    <Paper style={{ margin: "0 10px", padding: "20px",}} data-aos="fade-up">
       <div>
         <h2
           style={{

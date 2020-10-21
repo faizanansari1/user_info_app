@@ -48,13 +48,15 @@ export const Login = (props) => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container" data-aos="fade-in">
       <div className="content">
         <form onSubmit={onSubmit} className="login-form">
-          <h1>
+          <h1 data-aos="fade-down" dtat-aos-delay="300">
             Login <span>USER</span>
           </h1>
           <TextField
+            data-aos="fade-right"
+            data-aos-delay="500"
             required
             className="input-field"
             label="Username"
@@ -64,6 +66,8 @@ export const Login = (props) => {
           />
 
           <TextField
+            data-aos="fade-right"
+            data-aos-delay="900"
             required
             className="input-field"
             label="Password"

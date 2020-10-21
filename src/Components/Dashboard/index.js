@@ -23,9 +23,6 @@ export function Dashboard() {
     <div>
       <NavBar />
       <UserCard userINFO={userInfo}/>
-      {/* {userInfo.map((item) => {
-        return <h3>DashBoard LOGIN ID{item.name}</h3>;
-      })} */}
     </div>
   );
 }

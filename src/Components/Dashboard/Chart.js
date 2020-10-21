@@ -13,7 +13,7 @@ export default function Chart() {
     <div>
       <Grid spacing={2} container className="grid-container">
         <Grid item lg={3} sm={12} xs={12} style={{}}>
-          <Paper  style={{boxShadow:'0 0 5px gray'}}>
+          <Paper  style={{boxShadow:'0 0 5px gray'}}  data-aos="fade-left">
             <div className="grid-box">
               <StorageIcon style={{ fontSize: "45px", color: "#F3BB45" }} />
               <div>
@@ -30,7 +30,7 @@ export default function Chart() {
           </Paper>
         </Grid>
         <Grid item lg={3} sm={12} xs={12} style={{}}>
-          <Paper style={{boxShadow:'0 0 5px gray'}}>
+          <Paper style={{boxShadow:'0 0 5px gray'}} data-aos="fade-left">
             <div className="grid-box">
               <CollectionsBookmarkIcon style={{ fontSize: "45px", color: "#7AC29A" }} />
               <div>
@@ -47,7 +47,7 @@ export default function Chart() {
           </Paper>
         </Grid>
         <Grid item lg={3} sm={12} xs={12} style={{}}>
-          <Paper  style={{boxShadow:'0 0 5px gray'}}>
+          <Paper  style={{boxShadow:'0 0 5px gray'}} data-aos="fade-left">
             <div className="grid-box">
               <ErrorOutlineIcon style={{ fontSize: "45px", color: "#EB5E28" }} />
               <div>
@@ -64,7 +64,7 @@ export default function Chart() {
           </Paper>
         </Grid>
         <Grid item lg={3} sm={12} xs={12} style={{}}>
-          <Paper  style={{boxShadow:'0 0 5px gray'}}>
+          <Paper  style={{boxShadow:'0 0 5px gray'}} data-aos="fade-left" >
             <div className="grid-box">
               <TwitterIcon style={{ fontSize: "45px", color: "#68B3C8" }} />
               <div>

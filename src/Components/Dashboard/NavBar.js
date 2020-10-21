@@ -23,7 +23,8 @@ export default function NavBar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" data-aos="fade-down"
+    >
         <Toolbar>
           <IconButton
             edge="start"
