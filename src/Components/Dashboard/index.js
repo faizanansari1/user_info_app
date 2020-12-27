@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "./NavBar";
-import UserCard from "./UserCard";
-export function Dashboard() {
+
+export default () => {
   // const [loginId, setLoginId] = useState("");
   const [userInfo, setUserInfo] = useState([]);
   useEffect(() => {
+    console.log("userinfo: ", userInfo)
     const getLoginId = localStorage.getItem("loginID");
-    async function getInfoAPI() {
+    const getInfoAPI = async() =>{
+
       await fetch("https://demo4757926.mockable.io/user_info")
         .then((res) => res.json())
         .then((data) => {
           const filterId = data.filter((item) => item.id === getLoginId);
-          // console.log("filter Id", filterId)
           setUserInfo(filterId);
+      
         });
     }
     getInfoAPI();
     console.log("LoginID::", getLoginId);
   }, []);
 
-  return (
-    <div>
-      <NavBar />
-      <UserCard userINFO={userInfo}/>
-    </div>
-  );
-}
+  return <h1>hello</h1>;
+};

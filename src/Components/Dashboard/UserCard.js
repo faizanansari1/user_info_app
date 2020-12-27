@@ -65,12 +65,15 @@ export default function UserCard({ userINFO }) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2} className={classes.gridContainer}
->
+      <Grid container spacing={2} className={classes.gridContainer}>
         {userINFO.map((item) => {
           return (
             <Grid item lg={3} xs={12} key={item.id}>
-              <Paper className={classes.paper} data-aos="fade-right" data-aos-delay="500">
+              <Paper
+                className={classes.paper}
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
                 <div
                   className={classes.bgBox}
                   style={{ backgroundImage: `url(${item.bgimage})` }}
@@ -188,12 +191,7 @@ export default function UserCard({ userINFO }) {
           );
         })}
 
-        <Grid
-          item
-          lg={9}
-          xs={12}
-          style={{ paddingTop: '0' }}
-        >
+        <Grid item lg={9} xs={12} style={{ paddingTop: "0" }}>
           <Chart />
           <Graph />
         </Grid>

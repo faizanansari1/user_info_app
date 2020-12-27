@@ -20,31 +20,33 @@ const data = {
 
 export default function Graph() {
   return (
-    <Paper style={{ margin: "0 10px", padding: "20px",}} data-aos="fade-up">
-      <div>
-        <h2
-          style={{
-            margin: 0,
-            marginBottom: "17px",
-            color: "#3f51b5",
-            float: "left",
-            borderBottom: "2px solid #ccc",
-            paddingBottom: "3px",
-            display: "inline-block",
-            textShadow:'3px 3px 3px #ccc'
-          }}
-        >
-          <i>User Progress</i>
-        </h2>
-        <Bar
-          data={data}
-          width={100}
-          height={250}
-          options={{
-            maintainAspectRatio: false,
-          }}
-        />
-      </div>
-    </Paper>
+    <>
+      <Paper style={{ margin: "0 10px", padding: "20px",}}>
+        <div>
+          <h2
+            style={{
+              margin: 0,
+              marginBottom: "17px",
+              color: "#3f51b5",
+              float: "left",
+              borderBottom: "2px solid #ccc",
+              paddingBottom: "3px",
+              display: "inline-block",
+              textShadow: "3px 3px 3px #ccc",
+            }}
+          >
+            <i>User Progress</i>
+          </h2>
+          <Bar
+            data={data}
+            width={100}
+            height={250}
+            options={{
+              maintainAspectRatio: false,
+            }}
+          />
+        </div>
+      </Paper>
+    </>
   );
 }

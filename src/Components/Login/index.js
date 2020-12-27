@@ -3,6 +3,7 @@ import { IconButton, InputAdornment, TextField } from "@material-ui/core";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import React, { useEffect, useState } from "react";
+import { DASHBOARD, USER } from "../../constants/routingNames";
 
 export const Login = (props) => {
   const [username, setUsername] = useState("");
@@ -33,13 +34,13 @@ export const Login = (props) => {
     e.preventDefault();
 
     const varify = login.filter(
-      (item) => item.username === username && item.password === password
+      (item) => item.username === username.toLowerCase() && item.password === password
     );
 
     if (varify.length > 0) {
       console.log("Login Success", varify[0].id);
       localStorage.setItem("loginID", varify[0].id);
-      props.history.push("/dashboard");
+      props.history.push(`${USER}${DASHBOARD}`);
       setPassword("");
       setUsername("");
     } else {
